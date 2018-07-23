@@ -18,4 +18,34 @@ public class Prompter {
         char guess = guessInput.charAt(0);
         return isHit = game.applyGuess(guess);
     }
+
+    public void displayProgress(){
+        System.out.printf("You have %d tries remaining to solve: %s \n",
+                game.getRemainingTries(), game.getCurrentProgress());
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
